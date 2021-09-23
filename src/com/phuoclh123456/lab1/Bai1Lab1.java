@@ -2,7 +2,7 @@
 *  crated date: 9/16/2021
 *  author: cgm
 */
-package vn.edu.giadinh.tuan02;
+package com.phuoclh123456.lab1;
 
 public class Bai1Lab1 {
 
