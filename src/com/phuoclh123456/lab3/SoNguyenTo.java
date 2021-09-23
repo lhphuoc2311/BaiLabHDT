@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class SoNguyenTo {
 
     public static void main(String[] args) {
-        //bài này giải sao ta???
         boolean ok = true;
 
         Scanner bienNhap = new Scanner(System.in);
