@@ -11,33 +11,19 @@ public class Cow {
     double weight;//cân nặng
     int age;//tuổi
 
-    //method
-    
-
-    //phương thức tạo đâu?????
-    //không có
-    
     //hàm tạo mặc định
-    Cow()
-    {
-        //thiết lập thông tin khởi tạo ban đầu cho bò
-        age = 1;// tuổi trong bụng
+    Cow(){
+        weight = 11.2;
     }
-
-    //method - function tạo -constructor có tham số
+    //constructor có tham số
     Cow(double w){
-        weight =  w; //truyền đối số
-    }
-
-    //constructor nhiều tham số
-    Cow(double w, int a){
         weight = w;
-        age = a;
     }
+   
+    void moo(int mooNumber){
+        int bienCucBo = 5;
 
-    void moo(){
+        System.out.println(bienCucBo);
         System.out.println("Be be ...");
-    }
-
-    
+    }//kết thúc
 }
