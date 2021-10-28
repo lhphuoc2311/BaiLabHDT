@@ -8,7 +8,7 @@ public class Circle {
 
     String sound;
 
-    Circle(){}
+    public Circle(){}
 
     public Circle(String s){
         sound = s;

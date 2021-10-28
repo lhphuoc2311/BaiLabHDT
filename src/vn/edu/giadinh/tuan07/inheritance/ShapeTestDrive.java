@@ -8,17 +8,17 @@ public class ShapeTestDrive {
 
     
     public static void main(String[] args) {
-        Circle circle = new Circle();
+        Circle circle = new Circle("hinhTron.aif");
         circle.rotate();
         circle.playSound();
 
-        Square square = new Square();
+        /* Square square = new Square();
         square.rotate();
-        square.playSound();
+        square.playSound();*/
 
         Amoeba amoeba = new Amoeba("amoeba.hif", 5, 10);
         amoeba.rotate();
-        amoeba.playSound();
+        amoeba.playSound(); 
         
     }
     

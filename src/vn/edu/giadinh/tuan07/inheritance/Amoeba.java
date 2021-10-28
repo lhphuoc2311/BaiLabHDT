@@ -9,17 +9,34 @@ public class Amoeba extends Shape{
     int x;
     int y;
 
-    Amoeba(){}
+  public  Amoeba(){}
+
+  
+
+    /**
+ * @param s
+ * @param x
+ * @param y
+ */
+/* public Amoeba(String s, int x, int y) {
+    super(s);
+    this.x = x;
+    this.y = y;
+} */
+
+
 
     public Amoeba(String s){
-        //sound = s;
+        super(s);
     }
 
-    public Amoeba(String s, int xx, int yy){
-        //sound = s;
-        x = xx;
-        y = yy;
-    }
+     public Amoeba(String s, int x, int y){
+        //super(s);
+        this(s);
+        this.x = x;
+        this.y = y;
+        
+    } 
 
   public void rotate(){
 
@@ -28,6 +45,8 @@ public class Amoeba extends Shape{
         //1. xác tọa độ x, y
         //2. xoay theo x, y
         System.out.println("Xoay theo tọa độ x = " + x + " và y = " + y);
+
+        this.x = 10;
 
     }
 
@@ -38,7 +57,7 @@ public class Amoeba extends Shape{
 
         //khác với code xử lý file .aif
 
-        //System.out.println("Phát ra file âm thanh có tên " + sound);
+        System.out.println("Phát ra file âm thanh có tên " + getSound());
     }
     
 }
