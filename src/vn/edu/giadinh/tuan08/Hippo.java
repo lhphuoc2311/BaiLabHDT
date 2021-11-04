@@ -4,6 +4,7 @@
 */
 package vn.edu.giadinh.tuan08;
 
+
 public class Hippo extends Animal{
 
     public Hippo(){
@@ -17,12 +18,14 @@ public class Hippo extends Animal{
 
 
     @Override
-    protected void makeNoise() {
+    public void makeNoise() {
 
         if(hunger == 1){
             System.out.println("Kêu tiếng Hippo ...");
         }else if(hunger == 2){
-            System.out.println("Kêu quạo ....");
+            System.out.println(" Hippo Kêu quạo ....");
+        }else{
+            System.out.println("Kêu tiếng Hippo ...");
         }
         
         

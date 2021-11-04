@@ -28,7 +28,7 @@ public class Animal {
 
     //boundaries
 
-    protected void makeNoise(){
+    public void makeNoise(){
         //code để xử lý phát ra tiếng kêu
         //System.out.println("Phát ra tiếng kêu " + sound);
         System.out.println("Hmm...");
@@ -59,6 +59,11 @@ public class Animal {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void introduce(){
+        this.makeNoise();
+        System.out.println("I'm " + this.name);
     }
     
 }

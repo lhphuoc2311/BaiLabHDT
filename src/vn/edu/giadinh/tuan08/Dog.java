@@ -6,7 +6,7 @@ package vn.edu.giadinh.tuan08;
 public class Dog extends Canine{
 
     @Override
-    protected void makeNoise() {
+    public void makeNoise() {
         System.out.println("Phát ra âm thanh kiểu chó");
     }
 
