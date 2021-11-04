@@ -10,6 +10,10 @@ public class QuanLyTestDrive {
 
         NhanVien nhanVien = new NhanVien("Tèo", "TPHCM", 4.0f);
 
+        HocVien hocVien = new HocVien("Tửng", "Phú Quốc", 10.0f, 10.0f);
+
+        HocVien hocVien2 = new HocVien();
+
         //học viên
 
         //Khách hàng
@@ -19,8 +23,11 @@ public class QuanLyTestDrive {
 
         danhSachQuanLy.them(nhanVien);
         danhSachQuanLy.them(khachHang);
+        danhSachQuanLy.them(hocVien);
 
         danhSachQuanLy.inDanhSach();
+
+        System.out.println("so luong hoc vien " + HocVien.getSoLuongHV() );
 
     }
     

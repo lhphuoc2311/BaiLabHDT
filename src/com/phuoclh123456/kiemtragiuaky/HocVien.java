@@ -9,8 +9,16 @@ public class HocVien extends Person{
     private float diemMonHoc2;
     private static int soLuongHV;
 
+    private static void countHocVien(){
+        
+        soLuongHV++;
+    }
 
-    public HocVien(){}
+
+    public HocVien(){
+        countHocVien();
+
+    }
 
     
 
@@ -22,6 +30,9 @@ public class HocVien extends Person{
      */
     public HocVien(String hoTen, String diaChi, float diemMonHoc1, float diemMonHoc2) {
         super(hoTen, diaChi);
+        
+        countHocVien();
+
         this.diemMonHoc1 = diemMonHoc1;
         this.diemMonHoc2 = diemMonHoc2;
     }
@@ -38,7 +49,7 @@ public class HocVien extends Person{
      * @param diemMonHoc1 the diemMonHoc1 to set
      */
     public void setDiemMonHoc1(float diemMonHoc1) {
-        
+
         if(diemMonHoc1 >= 0 && diemMonHoc1 <= 10){
             this.diemMonHoc1 = diemMonHoc1;
         }else{
