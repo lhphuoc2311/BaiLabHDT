@@ -62,6 +62,10 @@ public class ArrayListDemoProgram {
 
         }
 
+        //đa tình
+        //đa hình
+        // nhiều hình dạng
+
 
         List<Animal> list3;
 
